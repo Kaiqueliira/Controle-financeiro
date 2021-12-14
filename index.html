@@ -17,9 +17,13 @@
 
 <body>
     <header>
-        <img src="./assets/logo.svg" alt="logo" />
-        <h1>Controle Financeiro</h1>
-        <div class="menu-toggle">x</div>
+        <div class="container">
+            <div class="content-header">
+                <img src="./assets/logo.svg" alt="logo" />
+                <h1>Controle Financeiro</h1>
+                <div class="menu-toggle">x</div>
+            </div>
+        </div>
     </header>
     <main>
         <div class="container">
@@ -34,19 +38,48 @@
                     </div>
                     <div class="form-item">
                         <label for="name-transaction">Nome da mercadoria</label>
-                        <input type="text" placeholder="input">
+                        <input type="text" id="name-transaction" placeholder="input">
                     </div>
                     <div class="form-item">
                         <label for="amount-transaction">Valor</label>
-                        <input type="number" placeholder="R$ 0,00">
+                        <input type="number" id="amount-transaction" placeholder="R$ 0,00">
                     </div>
                     <button>Adicionar transação</button>
                 </form>
             </section>
             <section class="transactions">
-                <div class="container">
+                <div class="transaction-container">
                     <h2>Extrato de transações</h2>
-
+                    <table class="table-transactions">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Mercadoria</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>+</td>
+                                <td> Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>R$ 12.999,99 </td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td> Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>R$ 0,01</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td>Total</td>
+                                <td>R$ 12.999,98
+                                    <span>[Lucro]</span>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
                 </div>
             </section>
         </div>
