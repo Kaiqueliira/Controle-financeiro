@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Controle Financeiro</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/logo.svg" alt="logo" />
+        <h1>Controle Financeiro</h1>
+        <div class="menu-toggle">x</div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="form-content">
+                <form action="">
+                    <div class="form-item">
+                        <label for="type-transaction">Tipo de Transação</label>
+                        <select id="type-transaction">
+                            <option value="buy">Compra</option>
+                            <option value="deposit">Deposito</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="name-transaction">Nome da mercadoria</label>
+                        <input type="text" placeholder="input">
+                    </div>
+                    <div class="form-item">
+                        <label for="amount-transaction">Valor</label>
+                        <input type="number" placeholder="R$ 0,00">
+                    </div>
+                    <button>Adicionar transação</button>
+                </form>
+            </section>
+            <section class="transactions">
+                <div class="container">
+                    <h2>Extrato de transações</h2>
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
