@@ -1,144 +1,198 @@
-                * {
-                    padding: 0;
-                    margin: 0;
-                    box-sizing: border-box;
-                }
-                
-                body {
-                    font-family: 'Lato', sans-serif;
-                    width: 100vw;
-                    height: 100vh;
-                }
-                
-                h2 {
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 700;
-                }
-                
-                header {
-                    background: #E0e0e0;
-                    height: 60px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                
-                .content-header {
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                }
-                
-                header h1 {
-                    font-size: 20px;
-                    line-height: 24px;
-                }
-                /* main */
-                
-                main {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-                /*          Container                      */
-                
-                .container {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    max-width: max(1100px, 90%);
-                    width: 100%;
-                    padding: 1.5rem;
-                }
-                /*   Form      */
-                
-                .form-content {
-                    width: 100%;
-                    border-bottom: 1px solid #979797;
-                    padding-bottom: 1.6rem;
-                    margin-bottom: 3rem;
-                }
-                
-                .form-item {
-                    margin: 0rem 0rem 1rem 0;
-                }
-                
-                .form-item label {
-                    margin: 0rem 0rem 0.5rem 0;
-                    display: block;
-                    font-size: 14px;
-                }
-                
-                .form-item input[type=text],
-                .form-item input[type=number],
-                .form-item select#type-transaction,
-                .form-content button {
-                    padding: 0.6rem;
-                    width: 100%;
-                    background: none;
-                    border: 1px solid #979797;
-                    border-radius: 4px;
-                }
-                
-                .form-content button {
-                    background: #333333;
-                    color: #fff;
-                    margin: 0.5rem 0;
-                    font-size: 14px;
-                }
-                /*       Transactions Container     */
-                
-                section.transactions {
-                    width: 100%;
-                }
-                
-                section.transaction-container {
-                    width: 100%;
-                }
-                
-                section.transactions .transaction-container h2 {
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 700;
-                    margin-bottom: 1.2rem;
-                    text-align: center;
-                }
-                
-                table.table-transactions {
-                    border-collapse: collapse;
-                }
-                
-                table.table-transactions thead tr th {
-                    text-align: left;
-                }
-                
-                table.table-transactions thead tr th,
-                table.table-transactions tbody tr td,
-                table.table-transactions tfoot tr td {
-                    padding: 0.5rem;
-                    font-size: 14px;
-                    text-align: left;
-                }
-                
-                table.table-transactions thead,
-                table.table-transactions tbody tr {
-                    border-bottom: 1px solid #979797;
-                }
-                
-                table.table-transactions tfoot tr {
-                    border-top: 4px double #979797;
-                }
-                
-                table.table-transactions tbody tr td:last-child,
-                table.table-transactions tfoot tr td:last-child {
-                    text-align: right;
-                }
-                
-                table.table-transactions tfoot tr td span {
-                    font-size: 10px;
-                    text-transform: uppercase;
-                }
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     font-family: 'Lato', sans-serif;
+     width: 100vw;
+     height: 100%;
+ }
+ 
+ header {
+     background: #E0e0e0;
+     height: 60px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ h2 {
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 700;
+ }
+ 
+ .content-header {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ header h1 {
+     font-size: 20px;
+     line-height: 24px;
+ }
+ 
+ .menu {
+     position: absolute;
+     right: 0;
+     top: 0;
+     background: #333333;
+     width: 85%;
+     height: 100vh;
+     color: #fff;
+     text-align: right;
+     font-size: 16px;
+     font-weight: 600;
+     display: none;
+ }
+ 
+ .toggle {
+     display: block;
+ }
+ 
+ .material-icons {
+     cursor: pointer;
+ }
+ 
+ .menu i {
+     display: block;
+     padding: 1rem;
+     text-align: left;
+     cursor: pointer;
+ }
+ 
+ .menu ul li {
+     list-style: none;
+     width: 100%;
+     transition: all 0.7s;
+ }
+ 
+ .menu ul li:hover {
+     background: #C4C4C4;
+     color: #333333;
+ }
+ 
+ .menu a {
+     text-decoration: none;
+     color: #fff;
+     width: 100%;
+     display: block;
+     padding: 0.8rem;
+ }
+ 
+ .menu a:hover {
+     color: #333333;
+ }
+ /* main */
+ 
+ main {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ /*          Container                      */
+ 
+ .container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     max-width: max(1100px, 90%);
+     width: 100%;
+     padding: 1.5rem;
+ }
+ /*   Form      */
+ 
+ .form-content {
+     width: 100%;
+     border-bottom: 1px solid #979797;
+     padding-bottom: 1.6rem;
+     margin-bottom: 3rem;
+ }
+ 
+ .form-item {
+     margin: 0rem 0rem 1rem 0;
+ }
+ 
+ .form-item label {
+     margin: 0rem 0rem 0.5rem 0;
+     display: block;
+     font-size: 14px;
+ }
+ 
+ .form-item input[type=text],
+ .form-item input[type=number],
+ .form-item select#type-transaction,
+ .form-content button {
+     padding: 0.6rem;
+     width: 100%;
+     background: none;
+     border: 1px solid #979797;
+     border-radius: 4px;
+ }
+ 
+ .form-content button {
+     background: #333333;
+     color: #fff;
+     margin: 0.5rem 0;
+     font-size: 14px;
+ }
+ /*       Transactions Container     */
+ 
+ section.transactions {
+     width: 100%;
+ }
+ 
+ section.transaction-container {
+     width: 100%;
+ }
+ 
+ section.transactions .transaction-container h2 {
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 700;
+     margin-bottom: 1.2rem;
+     text-align: center;
+ }
+ 
+ table.table-transactions {
+     border-collapse: collapse;
+     width: 100%;
+ }
+ 
+ table.table-transactions thead tr th {
+     text-align: left;
+ }
+ 
+ table.table-transactions thead tr th,
+ table.table-transactions tbody tr td,
+ table.table-transactions tfoot tr td {
+     padding: 0.5rem;
+     font-size: 14px;
+     text-align: left;
+ }
+ 
+ table.table-transactions thead,
+ table.table-transactions tbody tr {
+     border-bottom: 1px solid #979797;
+ }
+ 
+ table.table-transactions tfoot tr {
+     border-top: 4px double #979797;
+ }
+ 
+ table.table-transactions tbody tr td:last-child,
+ table.table-transactions tfoot tr td:last-child {
+     text-align: right;
+ }
+ 
+ table.table-transactions tfoot tr td span {
+     font-size: 10px;
+     text-transform: uppercase;
+     display: block;
+ }

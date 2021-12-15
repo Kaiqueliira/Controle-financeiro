@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Controle Financeiro</title>
 </head>
 
@@ -21,7 +21,23 @@
             <div class="content-header">
                 <img src="./assets/logo.svg" alt="logo" />
                 <h1>Controle Financeiro</h1>
-                <div class="menu-toggle">x</div>
+                <i class="material-icons" id="toggle" onclick="toggle()">menu</i>
+                <div class="menu">
+                    <nav>
+                        <i class="material-icons" id="toggle" onclick="toggle()">close</i>
+                        <ul>
+                            <li>
+                                <a href="#">Resumo</a>
+                            </li>
+                            <li>
+                                <a href="#">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">Configurações</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -78,8 +94,11 @@
                                     <span>[Lucro]</span>
                                 </td>
                             </tr>
+
                         </tfoot>
+
                     </table>
+
                 </div>
             </section>
         </div>
