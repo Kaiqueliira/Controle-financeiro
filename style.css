@@ -72,6 +72,8 @@
      list-style: none;
      width: 100%;
      transition: all 0.7s;
+     padding: 0.8rem 0;
+     text-align: center;
  }
 
  .menu ul li:hover {
@@ -82,9 +84,8 @@
  .menu a {
      text-decoration: none;
      color: #fff;
-     width: 100%;
      display: block;
-     padding: 0.8rem;
+
  }
 
  .menu a:hover {
@@ -198,10 +199,15 @@
      text-align: right;
  }
 
+ table.table-transactions tfoot tr td {
+     font-weight: 700;
+ }
+
  table.table-transactions tfoot tr td span {
      font-size: 10px;
      text-transform: uppercase;
      display: block;
+     font-weight: normal;
  }
 
  /* ##Device = Tablets, Ipads (portrait)
@@ -214,7 +220,6 @@
      }
 
      .form-content {
-         position: relative;
          border: 1px solid #979797;
          padding: 1rem;
          border-radius: 4px;
@@ -237,4 +242,102 @@
          position: absolute;
          right: 0;
      }
+
+     table.table-transactions thead tr th:last-child {
+         text-align: right;
+     }
+ }
+
+ /* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+ @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+     .container {
+         display: flex;
+         flex-direction: row;
+         gap: 1rem;
+         align-items: flex-start;
+     }
+
+     .form-content {
+         width: 400px;
+         height: 100%;
+     }
+
+     .form-content form .inputs {
+         display: flex;
+         flex-direction: column;
+         gap: 0;
+     }
+
+     .form-content form button {
+         position: relative;
+         width: 100%;
+     }
+
+     .transaction-container {
+         margin: 19px 0;
+     }
+
+     #toggle {
+         display: none;
+     }
+
+     .menu {
+         width: 350px;
+         position: relative;
+         background: #fff;
+         height: 100%;
+         color: #000;
+         text-align: none;
+         font-size: 16px;
+         font-weight: 600;
+         display: block;
+
+     }
+
+     .menu nav ul {
+         display: flex;
+
+     }
+
+     .menu a {
+         color: #000;
+         font-weight: 600;
+         border-right: 1px solid #979797;
+     }
+
+     .menu nav ul li:last-child a {
+         border-right: none;
+     }
+
+     header h1 {
+         text-align: left;
+     }
+
+ }
+
+ /* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+ @media (min-width: 1025px) and (max-width: 1280px) {
+
+     /* CSS */
+
+ }
+
+
+ /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+ @media (min-width: 1281px) {
+
+     /* CSS */
+
  }
