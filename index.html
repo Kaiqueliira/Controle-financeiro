@@ -8,7 +8,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -44,21 +46,24 @@
     <main>
         <div class="container">
             <section class="form-content">
+                <h2>Nova Transação</h2>
                 <form action="">
-                    <div class="form-item">
-                        <label for="type-transaction">Tipo de Transação</label>
-                        <select id="type-transaction">
-                            <option value="buy">Compra</option>
-                            <option value="deposit">Deposito</option>
-                        </select>
-                    </div>
-                    <div class="form-item">
-                        <label for="name-transaction">Nome da mercadoria</label>
-                        <input type="text" id="name-transaction" placeholder="input">
-                    </div>
-                    <div class="form-item">
-                        <label for="amount-transaction">Valor</label>
-                        <input type="number" id="amount-transaction" placeholder="R$ 0,00">
+                    <div class="inputs">
+                        <div class="form-item">
+                            <label for="type-transaction">Tipo de Transação</label>
+                            <select id="type-transaction">
+                                <option value="buy">Compra</option>
+                                <option value="deposit">Deposito</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <label for="name-transaction">Nome da mercadoria</label>
+                            <input type="text" id="name-transaction" placeholder="input">
+                        </div>
+                        <div class="form-item">
+                            <label for="amount-transaction">Valor</label>
+                            <input type="number" id="amount-transaction" placeholder="R$ 0,00">
+                        </div>
                     </div>
                     <button>Adicionar transação</button>
                 </form>
