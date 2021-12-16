@@ -186,7 +186,7 @@
      border-bottom: 1px solid #979797;
  }
  
- table.table-transactions tfoot tr {
+ table.table-transactions tfoot {
      border-top: 4px double #979797;
  }
  
