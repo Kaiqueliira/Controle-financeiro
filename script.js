@@ -69,7 +69,6 @@ const Form = {
     clearFields() {
         Form.name.value = ""
         Form.amount.value = ""
-        Form.type.value = ""
     },
     submit(event) {
         event.preventDefault()
@@ -111,7 +110,7 @@ const DOM = {
         <td>Total</td>
         <td>
          ${Utils.formatAmount(Transaction.total())}
-         ${(Transaction.total()>0) ? "<span>[Lucro]</span>" : ""}  
+         ${(Transaction.total()>0) ? "<span>[Lucro]</span>" : "<span>[Prejuizo]</span>"}  
         </td>
         </tr>`
         return html
@@ -134,7 +133,6 @@ const App = {
     },
     reload() {
         DOM.clearTransactions()
-
         App.init()
     }
 }
