@@ -111,7 +111,7 @@ const DOM = {
         <td>Total</td>
         <td>
          ${Utils.formatAmount(Transaction.total())}
-         ${(Transaction.total()>=0) ? "<span>[Lucro]</span>" : ""}  
+         ${(Transaction.total()<0) ? "<span>[Lucro]</span>" : ""}  
         </td>
         </tr>`
         return html
@@ -129,11 +129,12 @@ const DOM = {
 const App = {
     init() {
         Transaction.all.forEach(DOM.addTransaction)
-        DOM.updateBalance()
+
         storage.set(Transaction.all)
     },
     reload() {
         DOM.clearTransactions()
+        DOM.updateBalance()
         App.init()
     }
 }
