@@ -1,3 +1,5 @@
-function toggle() {
-    document.querySelector(".menu").classList.toggle('toggle')
+const Utils = {
+    toggle() {
+        document.querySelector(".menu").classList.toggle('toggle')
+    }
 }

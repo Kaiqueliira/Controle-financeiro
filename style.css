@@ -72,8 +72,8 @@
      list-style: none;
      width: 100%;
      transition: all 0.7s;
-     padding: 0.8rem 0;
-     text-align: center;
+     padding: 0.5rem 0;
+     text-align: right;
  }
  
  .menu ul li:hover {
@@ -85,6 +85,7 @@
      text-decoration: none;
      color: #fff;
      display: block;
+     margin-right: 1rem;
  }
  
  .menu a:hover {
@@ -287,8 +288,8 @@
          display: flex;
      }
      .menu nav ul li {
+         text-align: center;
          width: 100%;
-         padding: 0.5rem;
      }
      .menu nav ul li:hover {
          background: #979797;
@@ -297,6 +298,7 @@
          color: #000;
          font-weight: 600;
          border-right: 1px solid #979797;
+         width: 100%;
      }
      .menu nav ul li:last-child a {
          border-right: none;
