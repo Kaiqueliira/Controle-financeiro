@@ -3,13 +3,13 @@
      margin: 0;
      box-sizing: border-box;
  }
-
+ 
  body {
      font-family: 'Lato', sans-serif;
      width: 100vw;
      height: 100%;
  }
-
+ 
  header {
      background: #E0e0e0;
      height: 60px;
@@ -17,7 +17,7 @@
      align-items: center;
      justify-content: center;
  }
-
+ 
  h2 {
      font-size: 18px;
      font-style: normal;
@@ -25,19 +25,19 @@
      text-align: center;
      margin-bottom: 21px;
  }
-
+ 
  .content-header {
      width: 100%;
      display: flex;
      justify-content: space-between;
      align-items: center;
  }
-
+ 
  header h1 {
      font-size: 20px;
      line-height: 24px;
  }
-
+ 
  .menu {
      position: absolute;
      right: 0;
@@ -52,22 +52,22 @@
      display: none;
      z-index: 999;
  }
-
+ 
  .toggle {
      display: block;
  }
-
+ 
  .material-icons {
      cursor: pointer;
  }
-
+ 
  .menu i {
      display: block;
      padding: 1rem;
      text-align: left;
      cursor: pointer;
  }
-
+ 
  .menu ul li {
      list-style: none;
      width: 100%;
@@ -75,25 +75,23 @@
      padding: 0.8rem 0;
      text-align: center;
  }
-
+ 
  .menu ul li:hover {
      background: #C4C4C4;
      color: #333333;
  }
-
+ 
  .menu a {
      text-decoration: none;
      color: #fff;
      display: block;
-
  }
-
+ 
  .menu a:hover {
      color: #333333;
  }
-
  /* main */
-
+ 
  main {
      width: 100%;
      height: 100%;
@@ -101,37 +99,35 @@
      flex-direction: column;
      align-items: center;
  }
-
  /*          Container                      */
-
+ 
  .container {
      display: flex;
      flex-direction: column;
      align-items: center;
-     max-width: max(1100px, 90%);
+     max-width: 1100px;
      width: 100%;
      padding: 1.5rem;
  }
-
  /*   Form      */
-
+ 
  .form-content {
      width: 100%;
      border-bottom: 1px solid #979797;
      padding-bottom: 1.6rem;
      margin-bottom: 3rem;
  }
-
+ 
  .form-item {
      margin: 0rem 0rem 1rem 0;
  }
-
+ 
  .form-item label {
      margin: 0rem 0rem 0.5rem 0;
      display: block;
      font-size: 14px;
  }
-
+ 
  .form-item input[type=text],
  .form-item input[type=number],
  .form-item select#type-transaction,
@@ -142,24 +138,23 @@
      border: 1px solid #979797;
      border-radius: 4px;
  }
-
+ 
  .form-content button {
      background: #333333;
      color: #fff;
      margin: 0.5rem 0;
      font-size: 14px;
  }
-
  /*       Transactions Container     */
-
+ 
  section.transactions {
      width: 100%;
  }
-
+ 
  section.transaction-container {
      width: 100%;
  }
-
+ 
  section.transactions .transaction-container h2 {
      font-size: 18px;
      font-style: normal;
@@ -167,16 +162,16 @@
      margin-bottom: 1.2rem;
      text-align: center;
  }
-
+ 
  table.table-transactions {
      border-collapse: collapse;
      width: 100%;
  }
-
+ 
  table.table-transactions thead tr th {
      text-align: left;
  }
-
+ 
  table.table-transactions thead tr th,
  table.table-transactions tbody tr td,
  table.table-transactions tfoot tr td {
@@ -184,41 +179,38 @@
      font-size: 14px;
      text-align: left;
  }
-
+ 
  table.table-transactions thead,
  table.table-transactions tbody tr {
      border-bottom: 1px solid #979797;
  }
-
+ 
  table.table-transactions tfoot tr {
      border-top: 4px double #979797;
  }
-
+ 
  table.table-transactions tbody tr td:last-child,
  table.table-transactions tfoot tr td:last-child {
      text-align: right;
  }
-
+ 
  table.table-transactions tfoot tr td {
      font-weight: 700;
  }
-
+ 
  table.table-transactions tfoot tr td span {
      font-size: 10px;
      text-transform: uppercase;
      display: block;
      font-weight: normal;
  }
-
  /* ##Device = Tablets, Ipads (portrait)
 ##Screen = B/w 768px to 1024px */
-
+ 
  @media (min-width: 768px) and (max-width: 1024px) {
-
      .menu {
          width: 30%;
      }
-
      .form-content {
          border: 1px solid #979797;
          padding: 1rem;
@@ -226,65 +218,60 @@
          position: relative;
          height: 200px;
      }
-
      .form-content form {
          position: relative;
      }
-
      .form-content form .inputs {
          display: grid;
          grid-template-columns: 1fr 2fr 0.7fr;
          gap: 1rem;
      }
-
      .form-content form button {
          width: 200px;
          position: absolute;
          right: 0;
      }
-
      table.table-transactions thead tr th:last-child {
          text-align: right;
      }
  }
-
- /* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
- @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
+ 
+ @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape),
+ (min-width: 1025px) and (max-width: 1280px),
+ (min-width: 1281px) {
      .container {
          display: flex;
          flex-direction: row;
          gap: 1rem;
          align-items: flex-start;
      }
-
-     .form-content {
-         width: 400px;
-         height: 100%;
+     header h1 {
+         margin-left: 1rem;
+         flex: 2;
      }
-
+     .form-content {
+         width: 350px;
+         height: 100%;
+         border: 1px solid #979797;
+         padding: 1rem;
+         border-radius: 4px;
+         position: relative;
+     }
      .form-content form .inputs {
          display: flex;
          flex-direction: column;
          gap: 0;
      }
-
      .form-content form button {
          position: relative;
          width: 100%;
      }
-
      .transaction-container {
          margin: 19px 0;
      }
-
      #toggle {
          display: none;
      }
-
      .menu {
          width: 350px;
          position: relative;
@@ -295,49 +282,26 @@
          font-size: 16px;
          font-weight: 600;
          display: block;
-
      }
-
      .menu nav ul {
          display: flex;
-
      }
-
+     .menu nav ul li {
+         width: 100%;
+         padding: 0.5rem;
+     }
+     .menu nav ul li:hover {
+         background: #979797;
+     }
      .menu a {
          color: #000;
          font-weight: 600;
          border-right: 1px solid #979797;
      }
-
      .menu nav ul li:last-child a {
          border-right: none;
      }
-
      header h1 {
          text-align: left;
      }
-
- }
-
- /* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
- @media (min-width: 1025px) and (max-width: 1280px) {
-
-     /* CSS */
-
- }
-
-
- /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
- @media (min-width: 1281px) {
-
-     /* CSS */
-
  }
