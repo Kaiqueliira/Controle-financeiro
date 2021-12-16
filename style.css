@@ -270,6 +270,9 @@
      .transaction-container {
          margin: 19px 0;
      }
+     table.table-transactions thead tr th:last-child {
+         text-align: right;
+     }
      #toggle {
          display: none;
      }
